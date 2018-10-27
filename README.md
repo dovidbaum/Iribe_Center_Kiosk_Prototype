@@ -1,4 +1,4 @@
-# Iribe_Center_Kiosk_Prototype
+# Iribe Center Kiosk Prototype
 ## Developers: Dovid Baum, Harshil Sanjay Jain, Samarth Lakhotia, and Amnah Mahmood
 ### Description: 
 > “I want the Iribe Center to feel like Silicon Valley just hit College Park”
