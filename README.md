@@ -1,8 +1,7 @@
 # Iribe_Center_Kiosk_Prototype
-<<<<<<< HEAD
+## Developers: Dovid Baum, Harshil Sanjay Jain, Samarth Lakhotia, and Amnah Mahmood
 
-![Alt text](pics/Cover.jpg)
-=======
-~/Desktop/University Notes/Fall 2018/CMSC434/Cover.jpg![Alt text](~/Desktop/University Notes/Fall 2018/CMSC434/Cover.jpg)
->>>>>>> origin/master
+![Cover](pics/1.jpg)
+![Location](pics/2.jpg)
+
 
