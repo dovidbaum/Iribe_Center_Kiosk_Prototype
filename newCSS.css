@@ -1,0 +1,62 @@
+body {
+ 	  
+    /* background properties */
+	background-color: silver;
+	background-image: url(background.jpg);
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: center;
+	
+	/* font properties */
+	font-family: serif;
+	
+    color: maroon;
+    font-size: 2em;	/* try different percentages */	
+}
+
+h1 {
+	font-family: cursive;
+	color: #764394;
+	font-size: 5vw;
+	text-align: center;
+}
+
+input {
+	font-size:0.7em;
+	color:maroon;
+	font-family: "Comic Sans MS";
+	width:30%;
+	background:red;
+}
+
+select {
+	font-size:0.7em;
+	color:maroon;
+	font-family: "Comic Sans MS";
+	width:100%;
+}
+
+option {
+	font-size:0.9em;
+	color:maroon;
+	font-family: "Comic Sans MS";
+	width:100%;
+}
+
+textarea {
+	font-size:0.7em;
+	color:maroon;
+	font-family: "Comic Sans MS";
+	width:100%;
+}
+
+.tc {
+	width: 100%;
+}
+
+.styleTwo {
+	width:5%;
+	margin-left:-1%;
+	margin-right:1%;
+	
+}
