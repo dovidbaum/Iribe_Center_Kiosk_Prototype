@@ -9,11 +9,11 @@
 
 ![Cover](pics/1.jpg)
 ![Location](pics/2.jpg)
-![Location](pics/3.jpg)
-![Location](pics/4.jpg)
-![Location](pics/5.jpg)
+![HomePage](pics/3.jpg)
+![Search](pics/4.jpg)
+![Map](pics/5.jpg)
 
-todo:
-• Fix/add rest of low fidelity prototype to Readme
+#### todo: 
+• Fix/add rest of low fidelity prototype to Readme 
 • 
 
