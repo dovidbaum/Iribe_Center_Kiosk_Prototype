@@ -31,7 +31,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="30">
-                <caret line="2" column="66" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="66" />
+                <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -101,6 +101,11 @@
               <item name="Iribe_Center_Kiosk" type="b2602c69:ProjectViewProjectNode" />
               <item name="Iribe_Center_Kiosk" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Iribe_Center_Kiosk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Iribe_Center_Kiosk" type="462c0819:PsiDirectoryNode" />
+              <item name="pics" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -141,12 +146,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538406227010</updated>
       <workItem from="1538406230356" duration="132000" />
-      <workItem from="1540657333828" duration="1037000" />
+      <workItem from="1540657333828" duration="1253000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1169000" />
+    <option name="totallyTimeSpent" value="1385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="53" width="1276" height="737" extended-state="0" />
@@ -213,7 +218,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
-            <caret line="2" column="66" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="66" />
+            <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
