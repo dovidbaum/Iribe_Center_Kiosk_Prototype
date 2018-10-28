@@ -95,5 +95,4 @@ height:200px;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #3CC1FF;
-    opacity: 0.5;
 }

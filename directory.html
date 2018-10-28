@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="newCSS.css" type="text/css" />
 </head>
 <body>
+<div class="col-12 col-push-20">
 
 <section class="roomOptions">
 <br>
@@ -36,27 +37,51 @@ function showOfficesHelper() {
      var officeRow1 = document.createElement("div");
      officeRow1.className = "officeRow1";
      var office1 = document.createElement("BUTTON");
-     var office1Name = document.createTextNode("1210a - Evan Golub");
+     var office1Name = document.createTextNode("1210A - Evan Golub");
      var office2 = document.createElement("BUTTON");
-     var office2Name = document.createTextNode("1210b - Nelson Padua-perez");
+     var office2Name = document.createTextNode("1210B - Nelson Padua-perez");
      var officeRow2 = document.createElement("div");
      officeRow2.className = "officeRow2";
      var office3 = document.createElement("BUTTON");
-     var office3Name = document.createTextNode("1222a - Larry Herman");
+     var office3Name = document.createTextNode("1222A - Larry Herman");
      var office4 = document.createElement("BUTTON");
-     var office4Name = document.createTextNode("1122b - Michelle Hugue");
+     var office4Name = document.createTextNode("1122B - Michelle Hugue");
      var officeRow3 = document.createElement("div");
      officeRow3.className = "officeRow3";
      var office5 = document.createElement("BUTTON");
-     var office5Name = document.createTextNode("1210a - Andrew Childs");
+     var office5Name = document.createTextNode("1210A - Andrew Childs");
      var office6 = document.createElement("BUTTON");
-     var office6Name = document.createTextNode("1210b - Jeffrey S. Foster");
+     var office6Name = document.createTextNode("1210B - Jeffrey S. Foster");
      var officeRow4 = document.createElement("div");
      officeRow4.className = "officeRow4";
      var office7 = document.createElement("BUTTON");
-     var office7Name = document.createTextNode("1330a - Jason Fillipou");
+     var office7Name = document.createTextNode("1330A - Jason Fillipou");
      var office8 = document.createElement("BUTTON");
-     var office8Name = document.createTextNode("1320b - Clyde Kruskal");
+     var office8Name = document.createTextNode("1320B - Clyde Kruskal");
+     var officeRow5 = document.createElement("div");
+     officeRow5.className = "officeRow5";
+     var office9 = document.createElement("BUTTON");
+     var office9Name = document.createTextNode("1332A - Fawzi Emad");
+     var office10 = document.createElement("BUTTON");
+     var office10Name = document.createTextNode("1322B - Roger Eastman");
+     var officeRow6 = document.createElement("div");
+     officeRow6.className = "officeRow6";
+     var office11 = document.createElement("BUTTON");
+     var office11Name = document.createTextNode("1430A - Mihai Pop");
+     var office12 = document.createElement("BUTTON");
+     var office12Name = document.createTextNode("1410B - Anwar Mamat");
+     var officeRow7 = document.createElement("div");
+     officeRow7.className = "officeRow7";
+     var office13 = document.createElement("BUTTON");
+     var office13Name = document.createTextNode("1410A - Adam Porter");
+     var office14 = document.createElement("BUTTON");
+     var office14Name = document.createTextNode("1410B - Mohammad Hajiaghayi");
+     var officeRow8 = document.createElement("div");
+     officeRow8.className = "officeRow8";
+     var office15 = document.createElement("BUTTON");
+     var office15Name = document.createTextNode("1412A - Larry Davis");
+     var office16 = document.createElement("BUTTON");
+     var office16Name = document.createTextNode("1412B - John Dickerson");
 
      // append children to parents
      document.body.appendChild(officesList);
@@ -64,6 +89,10 @@ function showOfficesHelper() {
      officesList.appendChild(officeRow2);
      officesList.appendChild(officeRow3);
      officesList.appendChild(officeRow4);
+     officesList.appendChild(officeRow5);
+     officesList.appendChild(officeRow6);
+     officesList.appendChild(officeRow7);
+     officesList.appendChild(officeRow8);
      officeRow1.appendChild(office1);
      officeRow1.appendChild(office2);
      officeRow2.appendChild(office3);
@@ -72,6 +101,14 @@ function showOfficesHelper() {
      officeRow3.appendChild(office6);
      officeRow4.appendChild(office7);
      officeRow4.appendChild(office8);
+     officeRow5.appendChild(office9);
+     officeRow5.appendChild(office10);
+     officeRow6.appendChild(office11);
+     officeRow6.appendChild(office12);
+     officeRow7.appendChild(office13);
+     officeRow7.appendChild(office14);
+     officeRow8.appendChild(office15);
+     officeRow8.appendChild(office16);
      office1.appendChild(office1Name);
      office2.appendChild(office2Name);
      office3.appendChild(office3Name);
@@ -80,6 +117,14 @@ function showOfficesHelper() {
      office6.appendChild(office6Name);
      office7.appendChild(office7Name);
      office8.appendChild(office8Name);
+     office9.appendChild(office9Name);
+     office10.appendChild(office10Name);
+     office11.appendChild(office11Name);
+     office12.appendChild(office12Name);
+     office13.appendChild(office13Name);
+     office14.appendChild(office14Name);
+     office15.appendChild(office15Name);
+     office16.appendChild(office16Name);
 
 }
 function hideOffices(){
