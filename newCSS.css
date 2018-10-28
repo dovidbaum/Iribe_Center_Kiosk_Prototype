@@ -76,6 +76,13 @@ float: right;
 overflow-y: scroll;
 height:200px;
 }
+.roomButton{
+    background-color: #4C8945;
+    color: whitesmoke;
+    height: 50px;
+    width: 350px;
+
+}
 ::-webkit-scrollbar {
     width: 20px;
 }

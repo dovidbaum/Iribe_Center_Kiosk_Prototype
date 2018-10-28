@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="newCSS.css" type="text/css" />
 </head>
 <body>
-<div class="col-12 col-push-20">
-
+<!--<div class="col-12 col-push-20"> -->
+<div class="container">
+<div class="row">
+<div class="col-4">
 <section class="roomOptions">
 <br>
 <button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Offices</button>
@@ -18,7 +20,13 @@
 <button class="roomOptionsButtons" id="Lounge" type="button" onclick="">Lounge</button>
 <button class="roomOptionsButtons" id="Advisors" type="button" onclick="">Advisors</button>
 </section>
+</div><!-- end col -->
+<div class="col-8" id="locationsContainer">
+<br>
+<br>
+<br>
 
+</div><!-- end row -->
 <script>
 var officesShown = false;
 function showOffices(){
@@ -37,54 +45,72 @@ function showOfficesHelper() {
      var officeRow1 = document.createElement("div");
      officeRow1.className = "officeRow1";
      var office1 = document.createElement("BUTTON");
+     office1.className = "roomButton";
      var office1Name = document.createTextNode("1210A - Evan Golub");
      var office2 = document.createElement("BUTTON");
+     office2.className = "roomButton";
      var office2Name = document.createTextNode("1210B - Nelson Padua-perez");
      var officeRow2 = document.createElement("div");
      officeRow2.className = "officeRow2";
      var office3 = document.createElement("BUTTON");
+     office3.className = "roomButton";
      var office3Name = document.createTextNode("1222A - Larry Herman");
      var office4 = document.createElement("BUTTON");
+     office4.className = "roomButton";
      var office4Name = document.createTextNode("1122B - Michelle Hugue");
      var officeRow3 = document.createElement("div");
      officeRow3.className = "officeRow3";
      var office5 = document.createElement("BUTTON");
+     office5.className = "roomButton";
      var office5Name = document.createTextNode("1210A - Andrew Childs");
      var office6 = document.createElement("BUTTON");
+     office6.className = "roomButton";
      var office6Name = document.createTextNode("1210B - Jeffrey S. Foster");
      var officeRow4 = document.createElement("div");
      officeRow4.className = "officeRow4";
      var office7 = document.createElement("BUTTON");
+     office7.className = "roomButton";
      var office7Name = document.createTextNode("1330A - Jason Fillipou");
      var office8 = document.createElement("BUTTON");
+     office8.className = "roomButton";
      var office8Name = document.createTextNode("1320B - Clyde Kruskal");
      var officeRow5 = document.createElement("div");
      officeRow5.className = "officeRow5";
      var office9 = document.createElement("BUTTON");
+     office9.className = "roomButton";
      var office9Name = document.createTextNode("1332A - Fawzi Emad");
      var office10 = document.createElement("BUTTON");
+     office10.className = "roomButton";
      var office10Name = document.createTextNode("1322B - Roger Eastman");
      var officeRow6 = document.createElement("div");
      officeRow6.className = "officeRow6";
      var office11 = document.createElement("BUTTON");
+     office11.className = "roomButton";
      var office11Name = document.createTextNode("1430A - Mihai Pop");
      var office12 = document.createElement("BUTTON");
+     office12.className = "roomButton";
      var office12Name = document.createTextNode("1410B - Anwar Mamat");
      var officeRow7 = document.createElement("div");
      officeRow7.className = "officeRow7";
      var office13 = document.createElement("BUTTON");
+     office13.className = "roomButton";
      var office13Name = document.createTextNode("1410A - Adam Porter");
      var office14 = document.createElement("BUTTON");
+     office14.className = "roomButton";
      var office14Name = document.createTextNode("1410B - Mohammad Hajiaghayi");
      var officeRow8 = document.createElement("div");
      officeRow8.className = "officeRow8";
      var office15 = document.createElement("BUTTON");
+     office15.className = "roomButton";
      var office15Name = document.createTextNode("1412A - Larry Davis");
      var office16 = document.createElement("BUTTON");
+     office16.className = "roomButton";
      var office16Name = document.createTextNode("1412B - John Dickerson");
 
      // append children to parents
-     document.body.appendChild(officesList);
+     var locationsContainer = document.getElementById('locationsContainer');
+
+     locationsContainer.appendChild(officesList);
      officesList.appendChild(officeRow1);
      officesList.appendChild(officeRow2);
      officesList.appendChild(officeRow3);
