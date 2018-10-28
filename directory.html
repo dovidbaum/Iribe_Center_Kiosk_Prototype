@@ -19,7 +19,18 @@
 </section>
 
 <script>
-function showOffices() {
+var officesShown = false;
+function showOffices(){
+    if(!officesShown){
+        showOfficesHelper()
+    }else{
+        hideOffices();
+    }
+}
+
+
+function showOfficesHelper() {
+    officesShown = true;
      var officesList = document.createElement("div");
      officesList.className = "officesList";
      var officeRow1 = document.createElement("div");
@@ -39,27 +50,42 @@ function showOffices() {
      var office5 = document.createElement("BUTTON");
      var office5Name = document.createTextNode("1210a - Andrew Childs");
      var office6 = document.createElement("BUTTON");
-     var office6Name = document.createTextNode("1210B - Jeffrey S. Foster");
+     var office6Name = document.createTextNode("1210b - Jeffrey S. Foster");
+     var officeRow4 = document.createElement("div");
+     officeRow4.className = "officeRow4";
+     var office7 = document.createElement("BUTTON");
+     var office7Name = document.createTextNode("1330a - Jason Fillipou");
+     var office8 = document.createElement("BUTTON");
+     var office8Name = document.createTextNode("1320b - Clyde Kruskal");
 
      // append children to parents
      document.body.appendChild(officesList);
      officesList.appendChild(officeRow1);
      officesList.appendChild(officeRow2);
      officesList.appendChild(officeRow3);
+     officesList.appendChild(officeRow4);
      officeRow1.appendChild(office1);
      officeRow1.appendChild(office2);
      officeRow2.appendChild(office3);
      officeRow2.appendChild(office4);
      officeRow3.appendChild(office5);
      officeRow3.appendChild(office6);
+     officeRow4.appendChild(office7);
+     officeRow4.appendChild(office8);
      office1.appendChild(office1Name);
      office2.appendChild(office2Name);
      office3.appendChild(office3Name);
      office4.appendChild(office4Name);
      office5.appendChild(office5Name);
      office6.appendChild(office6Name);
+     office7.appendChild(office7Name);
+     office8.appendChild(office8Name);
 
 }
+function hideOffices(){
+
+}
+
 </script>
 
 
