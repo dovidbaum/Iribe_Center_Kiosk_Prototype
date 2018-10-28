@@ -10,7 +10,7 @@
 
 <section class="roomOptions">
 <br>
-<button class="roomOptionsButtons" id="Offices" type="button" onclick="">Offices</button>
+<button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Offices</button>
 <button class="roomOptionsButtons" id="Classrooms" type="button" onclick="">Classrooms</button>
 <button class="roomOptionsButtons" id="MakerSpace" type="button" onclick="">Maker Space</button>
 <button class="roomOptionsButtons" id="ConferenceRooms" type="button" onclick="">Conference Rooms</button>
@@ -18,17 +18,28 @@
 <button class="roomOptionsButtons" id="Advisors" type="button" onclick="">Advisors</button>
 </section>
 
-
-</section>
-
-
-
-
 <script>
 function showOffices() {
-    // create 
-    var section = document.createElement("SECTION");
-    section.className = "officeList";
+    console.log("inside showOffices");
+    // create
+ /*   var officesList = document.createElement("div");
+    officesList.className = "officesList";
+    //clicking on an office will take the user
+    var office1 = document.createElement("button");
+    office1.innerHTML = '1210a - Evan Golub';
+
+
+
+
+    // append children to parent node
+    officesList.appendChild(office1); */
+     var officesList = document.createElement("div");
+     officesList.className = "officesList";
+     var office1 = document.createElement("BUTTON");
+     var office1Name = document.createTextNode("1210a - Evan Golub");
+     office1.appendChild(office1Name);
+     officesList.appendChild(office1)
+     document.body.appendChild(officesList);
 
 
 }
