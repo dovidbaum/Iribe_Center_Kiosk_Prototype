@@ -1,11 +1,7 @@
 body {
  	  
     /* background properties */
-	background-color: silver;
-	background-image: url(background.jpg);
-	background-repeat: repeat;
-	background-attachment: scroll;
-	background-position: center;
+	background-color: #222222;
 	
 	/* font properties */
 	font-family: serif;
@@ -59,4 +55,19 @@ textarea {
 	margin-left:-1%;
 	margin-right:1%;
 	
+}
+.roomOptions{
+    float: left;
+
+}
+
+.roomOptionsButtons{
+    background-color: #34A5DA;
+    color: white;
+    border-radius: 11px;
+    display: block;
+    height:75px;
+    width:265px;
+    margin-bottom: 10px;
+
 }
