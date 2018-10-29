@@ -76,7 +76,32 @@ textarea {
     font-family: "Apple Color Emoji";
     color: #34A5DA;
 }
+.bottomButtons{
+    width: 120px;
+    height: 120px;
 
+}
+.bottomButtons{
+
+}
+.bottomButtons span{
+    font-size: 100px;
+}
+#back{
+    border-color: transparent;
+    background-color: transparent;
+    color: #771D76;
+}
+#home{
+    color: #34A5DA;
+    border-color: transparent;
+    background-color: transparent;
+}
+#forward{
+    border-color: transparent;
+    background-color: transparent;
+    color: #771D76;
+}
 .officesList{
 float: right;
 overflow-y: scroll;
