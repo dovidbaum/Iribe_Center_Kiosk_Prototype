@@ -159,6 +159,12 @@ height:300px;
     font-size: 24px;
 }
 .writtenDirections{
-    color: whitesmoke;
+    color: #A6AAA9;
+    margin: 1px;
+}
+.Map{
+    width: 500px;
+    height: 300px;
+    border-radius: 11px;
 }
 

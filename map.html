@@ -34,7 +34,7 @@
   <!-- put in written directions here -->
   <div class="row">
     <div class="col-6 ">
-        <p class="writtenDirections" id="groundFloorDirections1">Go straight towards the main staircase or elevator.</p>
+        <p class="writtenDirections"  id="groundFloorDirections1">Go straight towards the main staircase or elevator.</p>
         <p class="writtenDirections" id="groundFloorDirections2">Go up to Floor 4.</p>
     </div> <!-- end col-->
     <div class="col-6 d-flex justify-content-center">
@@ -44,12 +44,15 @@
   <!-- put in video directions here -->
     <div class="row">
       <div class="col-6 ">
-          <iframe width="420" height="315"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
+         <!-- <iframe width="420" height="315" class="Map" id="leftMap"
+          src="videos/MakerSpaceLeftMap.mov">
+          </iframe> -->
+          <video  type="video/mov" autoplay loop muted preload class="Map" id="leftMap"
+                 name="Video Name" src="videos/MakerSpaceLeftMap.mov">
+          </video>
       </div> <!-- end col-->
       <div class="col-6 d-flex justify-content-center">
-          <iframe width="420" height="315"
+          <iframe width="420" height="315" class="Map" id="rightMap"
           src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe>
       </div> <!-- end col-->
