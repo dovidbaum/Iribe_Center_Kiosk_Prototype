@@ -10,7 +10,7 @@
 <!--<div class="col-12 col-push-20"> -->
 <div class="container">
 <div class="row">
-<div class="col-4">
+<div class="col-3">
 <section class="roomOptions">
 <br>
 <button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Offices</button>
@@ -21,12 +21,17 @@
 <button class="roomOptionsButtons" id="Advisors" type="button" onclick="">Advisors</button>
 </section>
 </div><!-- end col -->
-<div class="col-8" id="locationsContainer">
-<br>
-<br>
+<div class="col-9" id="locationsContainer">
 <br>
 
 </div><!-- end row -->
+<!-- bottom Buttons -->
+<div class="row">
+    <div class="col-sm">
+        <input type="image" src="pics/back.png"  />
+        <button class="bottomButtons" id="home" type="button" onclick="">Home</button>
+        <button class="bottomButtons" id="forward" type="button" onclick="">Forward</button>
+    </div>
 <script>
 var officesShown = false;
 function showOffices(){
@@ -39,7 +44,10 @@ function showOffices(){
 
 
 function showOfficesHelper() {
-    officesShown = true;
+     officesShown = true;
+     var title = document.createElement("h1");
+     title.className = "title";
+     title.innerHTML = "Offices";
      var officesList = document.createElement("div");
      officesList.className = "officesList";
      var officeRow1 = document.createElement("div");
@@ -109,7 +117,7 @@ function showOfficesHelper() {
 
      // append children to parents
      var locationsContainer = document.getElementById('locationsContainer');
-
+     locationsContainer.appendChild(title);
      locationsContainer.appendChild(officesList);
      officesList.appendChild(officeRow1);
      officesList.appendChild(officeRow2);

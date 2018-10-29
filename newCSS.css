@@ -71,17 +71,25 @@ textarea {
     margin-bottom: 10px;
 
 }
+
+.title{
+    font-family: "Apple Color Emoji";
+    color: #34A5DA;
+}
+
 .officesList{
 float: right;
 overflow-y: scroll;
-height:200px;
+height:300px;
 }
 .roomButton{
     background-color: #4C8945;
     color: whitesmoke;
-    height: 50px;
+    height: 70px;
     width: 350px;
-
+    margin: 3px;
+    border-radius: 11px;
+    font-size: 24px;
 }
 ::-webkit-scrollbar {
     width: 20px;
@@ -103,3 +111,4 @@ height:200px;
 ::-webkit-scrollbar-thumb:hover {
     background: #3CC1FF;
 }
+
