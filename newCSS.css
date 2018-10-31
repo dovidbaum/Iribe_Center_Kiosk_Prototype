@@ -31,12 +31,12 @@ fieldset {
 }
 
 .inputStyle {
-	width:200px;
-	height:200px;
-	font-size:0.9em;
+	width:11vw;
+	height:11vw;
+	font-size:1.3vw;
 	color:#222222;
 	font-weight:bold;
-	font-family: 'Times New Roman';
+	font-family: 'Comic Sans MS';
 	border-radius: .75em;
 }
 
