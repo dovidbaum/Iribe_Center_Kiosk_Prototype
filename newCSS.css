@@ -2,27 +2,42 @@ body {
  	  
     /* background properties */
 	background-color: #222222;
-	
+	background-image: url(background2.jpg);
 	/* font properties */
 	font-family: serif;
-	
+	margin-top: 8%;
     color: maroon;
     font-size: 2em;	/* try different percentages */	
 }
 
 h1 {
 	font-family: cursive;
-	color: #764394;
+	color: #029FBC;
 	font-size: 5vw;
 	text-align: center;
 }
 
-input {
-	font-size:0.7em;
-	color:maroon;
-	font-family: "Comic Sans MS";
-	width:30%;
-	background:red;
+fieldset {
+    border-radius: .75em;
+	color: red;
+	display: block;
+	border: 10px;
+	border-color: red;
+	border: solid;
+	padding:10px;
+	margin-left:25vw;
+	margin-right:25vw;
+	
+}
+
+.inputStyle {
+	width:200px;
+	height:200px;
+	font-size:0.9em;
+	color:#222222;
+	font-weight:bold;
+	font-family: 'Times New Roman';
+	border-radius: .75em;
 }
 
 select {
