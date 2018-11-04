@@ -55,6 +55,9 @@ function showOffices(){
     }else{
         hideOffices();
     }
+    document.getElementById("golubButton").onclick = function () {
+                location.href = "map.html";
+            };
 }
 
 
@@ -69,6 +72,7 @@ function showOfficesHelper() {
      officeRow1.className = "officeRow1";
      var office1 = document.createElement("BUTTON");
      office1.className = "roomButton";
+     office1.id = "golubButton";
      var office1Name = document.createTextNode("1210A - Evan Golub");
      var office2 = document.createElement("BUTTON");
      office2.className = "roomButton";
@@ -224,7 +228,7 @@ function showConfrenceroomsHelper(){
     conferenceRoom1Reserve.innerHTML = "Occupied";
     conferenceRoom1Reserve.className = "reserveButtonOccupied";
     var conferenceRoom1Directions = document.createElement("BUTTON");
-    conferenceRoom1Directions.innerHTML = "Directions"
+    conferenceRoom1Directions.innerHTML = "Directions";
     conferenceRoom1Directions.className = "directionsButton";
     var conferenceRoom2 =  document.createElement("h3");
     conferenceRoom2.className = "conferenceHeaders";
@@ -233,7 +237,7 @@ function showConfrenceroomsHelper(){
     conferenceRoom2Reserve.className = "reserveButtonOpen";
     conferenceRoom2Reserve.innerHTML = "Reserve";
     var conferenceRoom2Directions = document.createElement("BUTTON");
-    conferenceRoom2Directions.innerHTML = "Directions"
+    conferenceRoom2Directions.innerHTML = "Directions";
     conferenceRoom2Directions.className = "directionsButton";
     var conferenceRoom3 =  document.createElement("h3");
     conferenceRoom3.className = "conferenceHeaders";
@@ -242,7 +246,7 @@ function showConfrenceroomsHelper(){
     conferenceRoom3Reserve.innerHTML = "Occupied";
     conferenceRoom3Reserve.className = "reserveButtonOccupied";
     var conferenceRoom3Directions = document.createElement("BUTTON");
-    conferenceRoom3Directions.innerHTML = "Directions"
+    conferenceRoom3Directions.innerHTML = "Directions";
     conferenceRoom3Directions.className = "directionsButton";
     var conferenceRoom4 =  document.createElement("h3");
     conferenceRoom4.className = "conferenceHeaders";
@@ -290,6 +294,7 @@ function hideConfrencerooms(){
     title[0].parentNode.removeChild(title[0]);
 conferenceroomsShown = false;
 }
+
 </script>
 
 
