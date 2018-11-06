@@ -72,7 +72,7 @@ input[type=submit] {
 
 .autocomplete-items div:hover {
   /*when hovering an item:*/
-  background-color: #e9e9e9;
+  background-color: #c08181;
 }
 
 .autocomplete-active {
@@ -92,7 +92,7 @@ input[type=submit] {
   </div>
   <input class='searching' style="width:12%; background-color: #FF533D;" type="submit" value="Search">
 </form>
-<div id = "didyoumean">
+<div id = "didyoumean" class="didYouMean">
 
 </div>
 <script>
@@ -121,6 +121,14 @@ function autocomplete(inp, arr) {
         c.innerHTML = "Did you mean : ";
         GButton = document.createElement("button");
         EButton = document.createElement("button");
+		GButton.style.backgroundColor = "#a64c4c";
+		EButton.style.backgroundColor = "#a64c4c";
+		GButton.style.border = "none";
+		EButton.style.border = "none";
+		GButton.style.marginRight = "5px";
+		EButton.style.marginRight = "5px";
+		GButton.style.padding = "5px";
+		EButton.style.padding = "5px";
         GButton.innerHTML = "Evan Golub";
         EButton.innerHTML = "Fauzi Emad";
         c.appendChild(GButton);
@@ -268,14 +276,14 @@ autocomplete(document.getElementById("myInput"), store);
 <br><br>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button style="color: #5BA747;" id="back" class="bottomButtons" onclick="">
+            <button id="back" class="bottomButtons" onclick="window.history.go(-1)">
                 <span class="glyphicon glyphicon-arrow-left" alt="<"></span>
             </button>
-            <button style="color: #5BA747;" id="home" class="bottomButtons">
+            <button id="home" class="bottomButtons" onclick="window.location='index.html'">
                 <a href="index.html"></a>
                 <span class="glyphicon glyphicon-home" alt="<"></span>
             </button>
-            <button style="color: #5BA747;" id="forward" class="bottomButtons" onclick="location:index.html">
+            <button id="forward" class="bottomButtons" onclick="window.histor.forward()">
                 <span class="glyphicon glyphicon-arrow-right" alt="<"></span>
             </button>
         </div>
