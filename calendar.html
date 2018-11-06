@@ -73,7 +73,9 @@ body {font-family: Verdana, sans-serif;}
     background: #edd68e;
     color: white !important
 }
-
+input:active {
+	opacity: 0.8;
+}
 
 }
 </style>
@@ -82,10 +84,11 @@ body {font-family: Verdana, sans-serif;}
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="newCSS.css" type="text/css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|KoHo:700|Open+Sans+Condensed:300|Yanone+Kaffeesatz" rel="stylesheet"> 
 </head>
 <body>
 
-<h1 style="margin-top:50px;margin-bottom:45px;">Event Calendar</h1>
+<h1 style="margin-top:50px;margin-bottom:45px;font-size: 5vw;font-family:'KoHo'">Event Calendar</h1>
 <div class="col-sm-12 col-sm-push-20">
 <div class="col-sm-12 col-sm-push-20">
 <div class="col-sm-12 col-sm-push-20">
@@ -148,7 +151,10 @@ body {font-family: Verdana, sans-serif;}
 			<input onclick="document.getElementById('id01').style.display='block'" class="" style="width:80%;background:#DCAE1D;border:none;color:white;border-radius:11px;" type="submit" value="Office Hours"/>
 			<br><br><span>14</span>
 		</li>
-		<li>15</li>
+		<li style='padding-top:23px;'>
+			<input onclick="document.getElementById('id03').style.display='block'" class="" style="width:80%;background:#DCAE1D;border:none;color:white;border-radius:11px;" type="submit" value="Parent Orientation"/>
+			<br><br><span>15</span>
+		</li>
 		<li>16</li>
 		<li>17</li>
 		<li style="margin-left:13px;">18</li>
@@ -205,7 +211,8 @@ body {font-family: Verdana, sans-serif;}
 			
 			<p><strong><u>Nelson Padua-perez</u>:</strong> 1210b 11:00 AM - 1:00 PM</p>
 			<button style="color:white;background-color:#5BA747;margin-bottom:5px;" onclick="window.location='map.html'"/>Directions</button>
-						
+			
+			<hr>			
 		  </div>
 		</div>
 	</div>
@@ -214,7 +221,7 @@ body {font-family: Verdana, sans-serif;}
 	<div id="id02" class="w3-modal">
 		<div class="w3-modal-content"  style="margin-top:10%;border-radius:0.75em">
 		  <header class="w3-container" style="background-color:#5BA747;border-radius:0.75em;color:white"> 
-			<span onclick="document.getElementById('id01').style.display='none'" 
+			<span onclick="document.getElementById('id02').style.display='none'" 
 			class="w3-button w3-display-topright" style="border-radius:0.75em">&times;</span>
 			<h2>Office Hours</h2>
 		  </header>
@@ -231,7 +238,24 @@ body {font-family: Verdana, sans-serif;}
 			
 			<p><strong><u>Roger Eastman</u>:</strong> 1322b 12:00 PM - 3:00 PM</p>
 			<button style="color:white;background-color:#5BA747;margin-bottom:5px;" onclick="window.location='map.html'"/>Directions</button>
-						
+			
+			<hr>			
+		  </div>
+		</div>
+	</div>
+	
+	
+	<div id="id03" class="w3-modal">
+		<div class="w3-modal-content"  style="margin-top:10%;border-radius:0.75em">
+		  <header class="w3-container" style="background-color:#5BA747;border-radius:0.75em;color:white"> 
+			<span onclick="document.getElementById('id03').style.display='none'" 
+			class="w3-button w3-display-topright" style="border-radius:0.75em">&times;</span>
+			<h2>Parent Terp Orientation</h2>
+		  </header>
+		  <div class="w3-container">
+			<p>The New Parent-Terp Orientation for the parents of incoming students will take place from 4:00 PM to 5:00 PM at the Maker Space.</p>
+			<button style="color:white;background-color:#5BA747;margin-bottom:5px;" onclick="window.location='map2.html'"/>Click Here For The Directions</button>
+			<hr>	
 		  </div>
 		</div>
 	</div>
@@ -245,14 +269,14 @@ body {font-family: Verdana, sans-serif;}
 </div>
 
 <div class="buttonStyle">
-		<button style="color: #5BA747;" id="back" class="bottomButtons" onclick="">
+		<button id="back" class="bottomButtons" onclick="window.history.go(-1)">
 			<span class="glyphicon glyphicon-arrow-left" alt="<"></span>
 		</button>
-		<button style="color: #5BA747;" id="home" class="bottomButtons">
+		<button id="home" class="bottomButtons" onclick="window.location='index.html'">
 			<a href="index.html"></a>
 			<span class="glyphicon glyphicon-home" alt="<"></span>
 		</button>
-		<button style="color: #5BA747;" id="forward" class="bottomButtons" onclick="location:index.html">
+		<button id="forward" class="bottomButtons" onclick="window.history.forward()">
 			<span class="glyphicon glyphicon-arrow-right" alt="<"></span>
 		</button>
 </div>

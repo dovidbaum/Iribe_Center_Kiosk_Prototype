@@ -110,6 +110,14 @@ textarea {
 	width:100%;
 }
 
+.didYouMean {
+	margin-left:20.5%;
+	padding:10px;
+	color:white;
+}
+.didYouMean:active {
+	opacity: 0.5;
+}
 .tc {
 	width: 100%;
 }
@@ -140,6 +148,10 @@ textarea {
 
 }
 
+.roomOptionButtons:active {
+	opacity: 0.2;
+}
+
 .title{
     font-family: "Yanone Kaffeesatz";
     color: #34A5DA;
@@ -149,7 +161,10 @@ textarea {
 .bottomButtons{
     width: 120px;
     height: 120px;
-	
+	color: #5BA747	
+}
+.bottomButtons:active {
+	opacity: 0.9;
 }
 .bottomButtons span{
     font-size: 100px;
@@ -157,17 +172,17 @@ textarea {
 #back{
     border-color: transparent;
     background-color: transparent;
-    color: #91AEBA;
+    color: #8cc17e;
 }
 #home{
-    color: #34A5DA;
+    color: #5BA747;
     border-color: transparent;
     background-color: transparent;
 }
 #forward{
     border-color: transparent;
     background-color: transparent;
-    color: #91AEBA;
+    color: #8cc17e;
 }
 .officesList{
 float: right;
@@ -184,7 +199,11 @@ padding-right:30px;
     border-radius: 11px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
+	border: none;
 	
+}
+.roomButton:active {
+	opacity: 0.9;
 }
 /* Style for conference rooms*/
 .conferenceRoomsList{
@@ -207,6 +226,9 @@ padding-right:30px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+.reserveButtonOpen:active {
+	opacity: 0.9;
+}
 .reserveButtonOccupied{
     background-color: #E42832;
     color: whitesmoke;
@@ -217,6 +239,10 @@ padding-right:30px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
+.reserveButtonOccupied:active {
+	opacity: 0.9;
+}
+
 .directionsButton{
     background-color: #4C8945;
     color: whitesmoke;
@@ -227,7 +253,9 @@ padding-right:30px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-
+.directionsButton:active {
+	opacity: 0.9;
+}
 
 ::-webkit-scrollbar {
     width: 20px;
