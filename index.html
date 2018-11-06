@@ -18,12 +18,12 @@
 		<div class="col-sm-12 col-sm-push-20">
 			<div class="centreMain">
 				<button style="color:white;" onclick="window.location='directory.html'" name="irb" class="inputStyle col1" />Iribe<br>Center</button>
-				<button style="color:white;" name="other" class="inputStyle col2" />Other<br>Locations</button>
+				<button style="color:white;" name="other" class="inputStyle col2" id="otherLocations" />Other<br>Locations</button>
 				<button style="color:white;" name="event" class="inputStyle col3" />Events<br>In Iribe</button>
 				<br><br>
-				<button style="color:white;" name="park" class="inputStyle col4" />Parking</button>
+				<button style="color:white;" name="park" class="inputStyle col4" id="parking" />Parking</button>
 				<button style="color:white;" name="about" class="inputStyle col5" />About</button>
-				<button style="color:white;" name="help" class="inputStyle col6" />Help</button>
+				<button style="color:white;" name="help" class="inputStyle col6" id="nextBus"/>Next Bus</button>
 			</div>
 		</div>
 		</div>
@@ -33,4 +33,17 @@
 			<marquee class="marqueeStyle">Here are the events happening in Iribe today. Here are the special announcements and alerts.</marquee>
 		</footer>
 </body>
+<script>
+
+    document.getElementById("nextBus").onclick = function () {
+        location.href = "https://www.transportation.umd.edu/nextbus.html";
+    };
+    document.getElementById("parking").onclick = function () {
+        location.href = "https://www.transportation.umd.edu/parking/maps/map_campus.pdf";
+    };
+    document.getElementById("otherLocations").onclick = function () {
+        location.href = "https://terpnav.umd.edu/";
+    };
+
+</script>
 </html>
