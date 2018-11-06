@@ -1,43 +1,98 @@
-body {
+html {
  	  
     /* background properties */
-	background-color: #222222;
 	background-image: url(background2.jpg);
 	/* font properties */
 	font-family: serif;
-	margin-top: 8%;
-    color: maroon;
     font-size: 2em;	/* try different percentages */	
 }
 
-h1 {
-	font-family: cursive;
-	color: #029FBC;
-	font-size: 5vw;
-	text-align: center;
+body {
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:0px;
+	background-color: rgba(0,0,0,0.7); /* Black background with opacity */
 }
 
-fieldset {
-    border-radius: .75em;
-	color: red;
-	display: block;
-	border: 10px;
-	border-color: red;
-	border: solid;
-	padding:10px;
-	margin-left:25vw;
-	margin-right:25vw;
-	
+h1 {
+	font-size: 5vw;
+	margin-bottom:1px;
+	margin-top: 8%;
+	text-align: center;
+	font-family: 'KoHo';
+	color:#5BA747;
+}
+h3 {
+	margin-bottom:60px;
+	text-align: center;
+	font-size: 3vw;
+	color: #9cca90;
+}
+
+
+footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+
+.buttonStyle {
+	position:fixed;
+	bottom:0;
+	margin-left:40%;
+}
+
+.marqueeStyle {
+	background-color:#5BA747;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.centreMain {
+	margin-left:25%;
+	margin-right:25%;
 }
 
 .inputStyle {
+	border:none;
 	width:11vw;
 	height:11vw;
 	font-size:1.3vw;
-	color:#222222;
+	background-color: #FF533D;
 	font-weight:bold;
-	font-family: 'Comic Sans MS';
 	border-radius: .75em;
+	margin-left:7%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.col1 {
+	background:#34A5DA;
+}
+
+.col2 {
+	background:#F7882F;
+}
+
+.col3 {
+	background:#DCAE1D;
+}
+
+.col4 {
+	background:#94618E;
+}
+
+.col5 {
+	background:#F81B84;
+}
+
+.col6 {
+	background:#FF533D;
+}
+
+.inputStyle:active {
+	opacity: 0.9;
 }
 
 select {
@@ -80,25 +135,27 @@ textarea {
 .roomOptionsButtons{
     background-color: #34A5DA;
     color: white;
+	border:none;
     border-radius: 11px;
     display: block;
     height:75px;
     width:265px;
     margin-bottom: 10px;
+	font-size:1.3vw;
+	font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
 .title{
-    font-family: "Apple Color Emoji";
+    font-family: "Yanone Kaffeesatz";
     color: #34A5DA;
+	padding-bottom: 2%;
+	margin-top: -0.5%;
 }
 .bottomButtons{
     width: 120px;
     height: 120px;
-
-}
-.bottomButtons{
-
+	
 }
 .bottomButtons span{
     font-size: 100px;
@@ -106,7 +163,7 @@ textarea {
 #back{
     border-color: transparent;
     background-color: transparent;
-    color: #771D76;
+    color: #91AEBA;
 }
 #home{
     color: #34A5DA;
@@ -116,22 +173,68 @@ textarea {
 #forward{
     border-color: transparent;
     background-color: transparent;
-    color: #771D76;
+    color: #91AEBA;
 }
 .officesList{
 float: right;
 overflow-y: scroll;
-height:300px;
+height:380px;
+padding-right:30px;
 }
 .roomButton{
-    background-color: #4C8945;
-    color: whitesmoke;
+    background-color: #a64c4c;
+    color: white;
     height: 70px;
     width: 350px;
     margin: 3px;
     border-radius: 11px;
     font-size: 24px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
 }
+/* Style for conference rooms*/
+.conferenceRoomsList{
+    text-align: center;
+    overflow-y: scroll;
+    height:300px;
+}
+.conferenceHeaders{
+    color: #DCB239;
+	font-weight: bold;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.reserveButtonOpen{
+    background-color: #4C8945;
+    color: whitesmoke;
+    height: 50px;
+    width: 110px;
+    margin: 3px;
+    border-radius: 11px;
+    font-size: 24px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.reserveButtonOccupied{
+    background-color: #E42832;
+    color: whitesmoke;
+    height: 50px;
+    width: 110px;
+    margin: 3px;
+    border-radius: 11px;
+    font-size: 24px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.directionsButton{
+    background-color: #4C8945;
+    color: whitesmoke;
+    height: 50px;
+    width: 120px;
+    margin: 3px;
+    border-radius: 11px;
+    font-size: 24px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -150,7 +253,7 @@ height:300px;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #3CC1FF;
+    background: #70c0e5;
 }
 
 /* Style for map.html */
@@ -184,4 +287,6 @@ height:300px;
     display: flex;
     justify-content:flex-start;
 }
+
+
 
