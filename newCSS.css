@@ -86,7 +86,7 @@ footer {
 }
 
 .inputStyle:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 select {
@@ -149,9 +149,26 @@ textarea {
 
 }
 
-.roomOptionButtons:active {
-	opacity: 0.2;
+#Offices:active{
+    opacity: 0.8;
 }
+#Classrooms:active{
+    opacity: 0.8;
+}
+#MakerSpace:active{
+    opacity: 0.8;
+}
+#ConferenceRooms:active{
+    opacity: 0.8;
+}
+#Lounge:active{
+    opacity: 0.8;
+}
+#Advisors:active{
+    opacity: 0.8;
+}
+
+
 
 .title{
     font-family: "Yanone Kaffeesatz";
@@ -165,7 +182,7 @@ textarea {
 	color: #5BA747	
 }
 .bottomButtons:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .bottomButtons span{
     font-size: 100px;
@@ -204,7 +221,7 @@ padding-right:30px;
 	
 }
 .roomButton:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 /* Style for conference rooms*/
 .conferenceRoomsList{
@@ -228,7 +245,7 @@ padding-right:30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .reserveButtonOpen:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .reserveButtonOccupied{
     background-color: #E42832;
@@ -241,7 +258,7 @@ padding-right:30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .reserveButtonOccupied:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .directionsButton{
@@ -255,7 +272,7 @@ padding-right:30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 .directionsButton:active {
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 ::-webkit-scrollbar {

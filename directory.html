@@ -14,13 +14,6 @@
 
 
 
-
-
-
-
-
-
-
 <div class = "overlay">
 
 <style>
@@ -75,12 +68,11 @@ input[type=submit] {
   cursor: pointer;
   background-color: #a64c4c;
   border: 1px solid #d4d4d4;
-  color: white;
 }
 
 .autocomplete-items div:hover {
   /*when hovering an item:*/
-  background-color: #c08181;
+  background-color: #e9e9e9;
 }
 
 .autocomplete-active {
@@ -93,14 +85,14 @@ input[type=submit] {
  }
 }
 </style>
-
+</div>
 <form autocomplete="off">
   <div class="autocomplete" style="width:65%;padding-left:20%;">
     <input id="myInput" type="text" name="myCountry" placeholder="Search By Room Number or Name">
   </div>
   <input class='searching' style="width:12%; background-color: #FF533D;" type="submit" value="Search">
 </form>
-<div id = "didyoumean" class="didYouMean">
+<div id = "didyoumean">
 
 </div>
 <script>
@@ -129,14 +121,6 @@ function autocomplete(inp, arr) {
         c.innerHTML = "Did you mean : ";
         GButton = document.createElement("button");
         EButton = document.createElement("button");
-		GButton.style.backgroundColor = "#a64c4c";
-		EButton.style.backgroundColor = "#a64c4c";
-		GButton.style.border = "none";
-		EButton.style.border = "none";
-		GButton.style.marginRight = "5px";
-		EButton.style.marginRight = "5px";
-		GButton.style.padding = "5px";
-		EButton.style.padding = "5px";
         GButton.innerHTML = "Evan Golub";
         EButton.innerHTML = "Fauzi Emad";
         c.appendChild(GButton);
@@ -243,39 +227,11 @@ function addActive(x) {
 }
 
 /*An array containing all the country names in the world:*/
-var store= ["Evan Golub", "Laurence Herman", "Fauzi Emad"];
+var store= ["1210A - Evan Golub", "1210A - Laurence Herman", "1332A - Fauzi Emad", "1210B - Nelson Padua-perez", "1122B - Michelle Hugue", "1210A - Andrew Childs", "1210B - Jeffrey S Foster", "1330A - Jason Fillipou", "1320B - Clyde Kruskal", "1322B - Roger Eastman", "1430A - Mihai Pop", "1410B - Anwar Mamat", "1410A - Adam Porter", "1410B - Mohammad Hajiaghayi", "1412A - Larry Davis", "1412B - John Dickerson" ];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), store);
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container">
     <div class="row">
         <div class="col-3">
@@ -285,8 +241,13 @@ autocomplete(document.getElementById("myInput"), store);
                 <button class="roomOptionsButtons" id="Classrooms" type="button" onclick="document.getElementById('id01').style.display='block'">Classrooms</button>
                 <button class="roomOptionsButtons" id="MakerSpace" type="button" onclick="document.getElementById('id01').style.display='block'">Maker Space</button>
                 <button class="roomOptionsButtons" id="ConferenceRooms" type="button" onclick="showConfrencerooms()">Conference Rooms</button>
+<<<<<<< HEAD
                 <button class="roomOptionsButtons" id="Lounge" type="button" onclick="document.getElementById('id01').style.display='block'">Lounge</button>
                 <button class="roomOptionsButtons" id="Advisors" type="button" onclick="">Advisors</button>
+=======
+                <button class="roomOptionsButtons" id="Lounge" type="button" onclick="">Lounge</button>
+                <button class="roomOptionsButtons" id="Advisors" type="button" onclick="showAdvisors()">Advisors</button>
+>>>>>>> 3903cc6e4f120fdfe785235a1e26f67039e5fe51
             </section>
         </div><!-- end col -->
 
@@ -312,14 +273,14 @@ autocomplete(document.getElementById("myInput"), store);
 <br><br>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button id="back" class="bottomButtons" onclick="window.history.go(-1)">
+            <button style="color: #5BA747;" id="back" class="bottomButtons" onclick="">
                 <span class="glyphicon glyphicon-arrow-left" alt="<"></span>
             </button>
-            <button id="home" class="bottomButtons" onclick="window.location='index.html'">
+            <button style="color: #5BA747;" id="home" class="bottomButtons">
                 <a href="index.html"></a>
                 <span class="glyphicon glyphicon-home" alt="<"></span>
             </button>
-            <button id="forward" class="bottomButtons" onclick="window.histor.forward()">
+            <button style="color: #5BA747;" id="forward" class="bottomButtons" onclick="location:index.html">
                 <span class="glyphicon glyphicon-arrow-right" alt="<"></span>
             </button>
         </div>
@@ -328,10 +289,14 @@ autocomplete(document.getElementById("myInput"), store);
 <script>
 var officesShown = false;
 var conferenceroomsShown = false;
+var advisorsShown = false;
 function showOffices(){
     if(!officesShown){
         if(conferenceroomsShown){
         hideConfrencerooms();
+        }
+        if(advisorsShown){
+            hideAdvisors();
         }
         showOfficesHelper()
     }else{
@@ -350,6 +315,55 @@ document.getElementById("back").onclick = function () {
 document.getElementById("forward").onclick = function () {
                         location.href = "map.html";
     };
+function showAdvisors(){
+    if(!advisorsShown){
+        if(conferenceroomsShown){
+        hideConfrencerooms();
+        }
+        if(officesShown){
+           hideOffices();
+        }
+        showAdvisorsHelper();
+    }else{ // if advisors is showing, hide it on click
+        hideAdvisors();
+    }
+    document.getElementById("advisorButton1").onclick = function () {
+                location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton2").onclick = function () {
+                   location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton3").onclick = function () {
+                    location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton4").onclick = function () {
+                     location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton5").onclick = function () {
+                      location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton6").onclick = function () {
+                       location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton7").onclick = function () {
+                location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton8").onclick = function () {
+                   location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton9").onclick = function () {
+                    location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton10").onclick = function () {
+                     location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton11").onclick = function () {
+                      location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    document.getElementById("advisorButton12").onclick = function () {
+                       location.href = "https://booknow.appointment-plus.com/9qthcstv/";
+    };
+    }
 
 
 function showOfficesHelper() {
@@ -499,6 +513,9 @@ if(!conferenceroomsShown){
         if(officesShown){
             hideOffices();
         }
+        if(advisorsShown){
+            hideAdvisors();
+        }
         showConfrenceroomsHelper();
     }else{
         hideConfrencerooms();
@@ -509,7 +526,7 @@ function showConfrenceroomsHelper(){
     conferenceroomsShown = true;
     var title = document.createElement("h1");
     title.className = "title";
-    title.innerHTML = "Conference Rooms";
+    title.innerHTML = "CONFERENCE ROOMS";
     var conferenceRoomsList = document.createElement("div");
     conferenceRoomsList.className = "conferenceRoomsList";
     var conferenceRoom1 =  document.createElement("h3");
@@ -585,9 +602,135 @@ function hideConfrencerooms(){
     title[0].parentNode.removeChild(title[0]);
 conferenceroomsShown = false;
 }
+/* Advisors */
+function showAdvisorsHelper() {
+     advisorsShown = true;
+     var title = document.createElement("h1");
+     title.className = "title";
+     title.innerHTML = "ADVISORS";
+     var officesList = document.createElement("div");
+     officesList.className = "officesList";
+     var officeRow1 = document.createElement("div");
+     officeRow1.className = "officeRow1";
+     var office1 = document.createElement("BUTTON");
+     office1.className = "roomButton";
+     office1.id = "advisorButton1";
+     var office1Name = document.createTextNode("Alyssa Neuner");
+     var office2 = document.createElement("BUTTON");
+     office2.className = "roomButton";
+     office2.id = "advisorButton2";
+     var office2Name = document.createTextNode("Amy Vaillancourt");
+     var officeRow2 = document.createElement("div");
+     officeRow2.className = "officeRow2";
+     var office3 = document.createElement("BUTTON");
+     office3.className = "roomButton";
+     office3.id = "advisorButton3";
+     var office3Name = document.createTextNode("A.P. Pimpawathin");
+     var office4 = document.createElement("BUTTON");
+     office4.className = "roomButton";
+     office4.id = "advisorButton4";
+     var office4Name = document.createTextNode("David Turner");
+     var officeRow3 = document.createElement("div");
+     officeRow3.className = "officeRow3";
+     var office5 = document.createElement("BUTTON");
+     office5.className = "roomButton";
+     office5.id = "advisorButton5";
+     var office5Name = document.createTextNode("Freddie Salley");
+     var office6 = document.createElement("BUTTON");
+     office6.className = "roomButton";
+     office6.id = "advisorButton6";
+     var office6Name = document.createTextNode("Jandelyn Plane");
+     var officeRow4 = document.createElement("div");
+     officeRow4.className = "officeRow4";
+     var office7 = document.createElement("BUTTON");
+     office7.className = "roomButton";
+     office7.id = "advisorButton7";
+     var office7Name = document.createTextNode("Jennifer Horton");
+     var office8 = document.createElement("BUTTON");
+     office8.className = "roomButton";
+     office8.id = "advisorButton8";
+     var office8Name = document.createTextNode("Joyce Rasing");
+     var officeRow5 = document.createElement("div");
+     officeRow5.className = "officeRow5";
+     var office9 = document.createElement("BUTTON");
+     office9.id = "advisorButton9";
+     office9.className = "roomButton";
+     var office9Name = document.createTextNode("Kenneth Kokason");
+     var office10 = document.createElement("BUTTON");
+     office10.className = "roomButton";
+     office10.id = "advisorButton10";
+     var office10Name = document.createTextNode("Larry Herman");
+     var officeRow6 = document.createElement("div");
+     officeRow6.className = "officeRow6";
+     var office11 = document.createElement("BUTTON");
+     office11.className = "roomButton";
+     office11.id = "advisorButton11";
+     var office11Name = document.createTextNode("Lauren Segler");
+     var office12 = document.createElement("BUTTON");
+     office12.className = "roomButton";
+     office12.id = "advisorButton12";
+     var office12Name = document.createTextNode("Victoria Fitzgerald");
 
+
+     // append children to parents
+     var locationsContainer = document.getElementById('locationsContainer');
+     locationsContainer.appendChild(title);
+     locationsContainer.appendChild(officesList);
+     officesList.appendChild(officeRow1);
+     officesList.appendChild(officeRow2);
+     officesList.appendChild(officeRow3);
+     officesList.appendChild(officeRow4);
+     officesList.appendChild(officeRow5);
+     officesList.appendChild(officeRow6);
+
+     officeRow1.appendChild(office1);
+     officeRow1.appendChild(office2);
+     officeRow2.appendChild(office3);
+     officeRow2.appendChild(office4);
+     officeRow3.appendChild(office5);
+     officeRow3.appendChild(office6);
+     officeRow4.appendChild(office7);
+     officeRow4.appendChild(office8);
+     officeRow5.appendChild(office9);
+     officeRow5.appendChild(office10);
+     officeRow6.appendChild(office11);
+     officeRow6.appendChild(office12);
+
+     office1.appendChild(office1Name);
+     office2.appendChild(office2Name);
+     office3.appendChild(office3Name);
+     office4.appendChild(office4Name);
+     office5.appendChild(office5Name);
+     office6.appendChild(office6Name);
+     office7.appendChild(office7Name);
+     office8.appendChild(office8Name);
+     office9.appendChild(office9Name);
+     office10.appendChild(office10Name);
+     office11.appendChild(office11Name);
+     office12.appendChild(office12Name);
+
+
+}
+function hideAdvisors(){
+var row6 = document.getElementsByClassName("officeRow6");
+var row5 = document.getElementsByClassName("officeRow5");
+var row4 = document.getElementsByClassName("officeRow4");
+var row3 = document.getElementsByClassName("officeRow3");
+var row2 = document.getElementsByClassName("officeRow2");
+var row1 = document.getElementsByClassName("officeRow1");
+var officeList = document.getElementsByClassName("officesList");
+var title = document.getElementsByClassName("title");
+row6[0].parentNode.removeChild(row6[0]);
+row5[0].parentNode.removeChild(row5[0]);
+row4[0].parentNode.removeChild(row4[0]);
+row3[0].parentNode.removeChild(row3[0]);
+row2[0].parentNode.removeChild(row2[0]);
+row1[0].parentNode.removeChild(row1[0]);
+officeList[0].parentNode.removeChild(officeList[0]);
+title[0].parentNode.removeChild(title[0]);
+advisorsShown = false;
+}
 </script>
-
 
 </body>
 </html>
