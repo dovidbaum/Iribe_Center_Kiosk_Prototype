@@ -67,12 +67,11 @@ input[type=submit] {
   cursor: pointer;
   background-color: #a64c4c;
   border: 1px solid #d4d4d4;
-  color: white;
 }
 
 .autocomplete-items div:hover {
   /*when hovering an item:*/
-  background-color: #c08181;
+  background-color: #e9e9e9;
 }
 
 .autocomplete-active {
@@ -88,7 +87,7 @@ input[type=submit] {
   </div>
   <input style="width:12%; background-color: #FF533D;" type="submit" value="Search">
 </form>
-<div id = "didyoumean" class="didYouMean">
+<div id = "didyoumean">
 
 </div>
 <script>
@@ -117,14 +116,6 @@ function autocomplete(inp, arr) {
         c.innerHTML = "Did you mean : ";
         GButton = document.createElement("button");
         EButton = document.createElement("button");
-		GButton.style.backgroundColor = "#a64c4c";
-		EButton.style.backgroundColor = "#a64c4c";
-		GButton.style.border = "none";
-		EButton.style.border = "none";
-		GButton.style.marginRight = "5px";
-		EButton.style.marginRight = "5px";
-		GButton.style.padding = "5px";
-		EButton.style.padding = "5px";
         GButton.innerHTML = "Evan Golub";
         EButton.innerHTML = "Fauzi Emad";
         c.appendChild(GButton);
@@ -231,7 +222,7 @@ function addActive(x) {
 }
 
 /*An array containing all the country names in the world:*/
-var store= ["Evan Golub", "Laurence Herman", "Fauzi Emad"];
+var store= ["1210A - Evan Golub", "1210A - Laurence Herman", "1332A - Fauzi Emad", "1210B - Nelson Padua-perez", "1122B - Michelle Hugue", "1210A - Andrew Childs", "1210B - Jeffrey S Foster", "1330A - Jason Fillipou", "1320B - Clyde Kruskal", "1322B - Roger Eastman", "1430A - Mihai Pop", "1410B - Anwar Mamat", "1410A - Adam Porter", "1410B - Mohammad Hajiaghayi", "1412A - Larry Davis", "1412B - John Dickerson" ];
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(document.getElementById("myInput"), store);
@@ -258,14 +249,14 @@ autocomplete(document.getElementById("myInput"), store);
 <br><br>
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <button id="back" class="bottomButtons" onclick="window.history.go(-1)">
+            <button style="color: #5BA747;" id="back" class="bottomButtons" onclick="">
                 <span class="glyphicon glyphicon-arrow-left" alt="<"></span>
             </button>
-            <button id="home" class="bottomButtons" onclick="window.location='index.html'">
+            <button style="color: #5BA747;" id="home" class="bottomButtons">
                 <a href="index.html"></a>
                 <span class="glyphicon glyphicon-home" alt="<"></span>
             </button>
-            <button id="forward" class="bottomButtons" onclick="window.histor.forward()">
+            <button style="color: #5BA747;" id="forward" class="bottomButtons" onclick="location:index.html">
                 <span class="glyphicon glyphicon-arrow-right" alt="<"></span>
             </button>
         </div>
