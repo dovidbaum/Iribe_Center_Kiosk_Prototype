@@ -7,9 +7,10 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="newCSS.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|KoHo:700|Open+Sans+Condensed:300|Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-<h1 style="margin-top:5%">Iribe Directory</h1>
+<h1 style="margin-top:5%;font-family:'KoHo';font-size:5vw;">Iribe Directory</h1>
 
 
 
@@ -86,6 +87,10 @@ input[type=submit] {
   /*when navigating through the items using the arrow keys:*/
   background-color: DodgerBlue !important;
   color: #ffffff;
+
+ .searching:active {
+	opacity:0.8;
+ }
 }
 </style>
 
@@ -93,7 +98,7 @@ input[type=submit] {
   <div class="autocomplete" style="width:65%;padding-left:20%;">
     <input id="myInput" type="text" name="myCountry" placeholder="Search By Room Number or Name">
   </div>
-  <input style="width:12%; background-color: #FF533D;" type="submit" value="Search">
+  <input class='searching' style="width:12%; background-color: #FF533D;" type="submit" value="Search">
 </form>
 <div id = "didyoumean" class="didYouMean">
 
@@ -277,10 +282,10 @@ autocomplete(document.getElementById("myInput"), store);
             <section class="roomOptions">
                 <br>
                 <button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Offices</button>
-                <button class="roomOptionsButtons" id="Classrooms" type="button" onclick="">Classrooms</button>
-                <button class="roomOptionsButtons" id="MakerSpace" type="button" onclick="">Maker Space</button>
+                <button class="roomOptionsButtons" id="Classrooms" type="button" onclick="document.getElementById('id01').style.display='block'">Classrooms</button>
+                <button class="roomOptionsButtons" id="MakerSpace" type="button" onclick="document.getElementById('id01').style.display='block'">Maker Space</button>
                 <button class="roomOptionsButtons" id="ConferenceRooms" type="button" onclick="showConfrencerooms()">Conference Rooms</button>
-                <button class="roomOptionsButtons" id="Lounge" type="button" onclick="">Lounge</button>
+                <button class="roomOptionsButtons" id="Lounge" type="button" onclick="document.getElementById('id01').style.display='block'">Lounge</button>
                 <button class="roomOptionsButtons" id="Advisors" type="button" onclick="">Advisors</button>
             </section>
         </div><!-- end col -->
@@ -288,6 +293,20 @@ autocomplete(document.getElementById("myInput"), store);
         <div class="col-9" id="locationsContainer">
             <br>
         </div>
+		
+		<div id="id01" class="w3-modal">
+			<div class="w3-modal-content"  style="margin-top:10%;border-radius:0.75em">
+			  <header class="w3-container" style="background-color:#FF533D;border-radius:0.75em;color:white"> 
+				<span onclick="document.getElementById('id01').style.display='none'" 
+				class="w3-button w3-display-topright" style="border-radius:0.75em">&times;</span>
+				<h2><center>Minds At Work! Area Under Construction! Please Stay Away!</center></h2>
+			  </header>
+			  <div class="w3-container">
+				<p style="margin:5%;color:#FF533D;font-size:1.2em;"><b>The Feature That You're Trying To Access Is Still Under Implementation! Sorry For The Inconvinience! Please Come Back Again Later!</b></p>	
+			  </div>
+			</div>
+		</div>
+		
     </div><!-- end row -->
 <!-- bottom Buttons -->
 <br><br>
