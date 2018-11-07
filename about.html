@@ -45,27 +45,23 @@
         </div>
     </div><!-- end row -->
     <!-- bottom Buttons -->
-    <br><br>
-    <div class="row">
-        <div class="col d-flex justify-content-center">
-            <button style="color: #5BA747;" id="back" class="bottomButtons" onclick="index.html">
-                <span class="glyphicon glyphicon-arrow-left" alt="<"></span>
-            </button>
-            <button style="color: #5BA747;" id="home" class="bottomButtons">
-                <a href="index.html"></a>
-                <span class="glyphicon glyphicon-home" alt="<"></span>
-            </button>
-            <button style="color: #5BA747;" id="forward" class="bottomButtons"
-                    onclick="location:index.html">
-                <span class="glyphicon glyphicon-arrow-right" alt="<"></span>
-            </button>
-        </div>
-    </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+</div>
+<div class="buttonStyle">
+		<button id="back" class="bottomButtons" onclick="window.history.go(-1)">
+			<span class="glyphicon glyphicon-arrow-left" alt="<"></span>
+		</button>
+		<button id="home" class="bottomButtons" onclick="window.location='index.html'">
+			<a href="index.html"></a>
+			<span class="glyphicon glyphicon-home" alt="<"></span>
+		</button>
+		<button id="forward" class="bottomButtons" onclick="window.history.forward()">
+			<span class="glyphicon glyphicon-arrow-right" alt="<"></span>
+		</button>
 </div>
 <style>
     .modal {
@@ -172,8 +168,8 @@
       modal1.style.visibility = "visible";
       modal1.style.display = "block";
       document.body.style.background = "url('irebelobby.jpeg')";
-      document.body.style.backgroundSize = "cover";
-
+      document.body.style.backgroundRepeat = "no-repeat";
+	  document.body.style.backgroundSize = "cover";
 
     }
 
@@ -183,7 +179,8 @@
       modal.style.visibility = "visible";
         modal.style.display = "block";
         document.body.style.background = "url('picBackground.jpg')";
-      
+		document.body.style.backgroundRepeat = "no-repeat";
+	  document.body.style.backgroundSize = "cover";
     }
 
     // When the user clicks on <span> (x), close the modal
