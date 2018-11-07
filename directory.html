@@ -68,6 +68,8 @@ input[type=submit] {
   cursor: pointer;
   background-color: #a64c4c;
   border: 1px solid #d4d4d4;
+  color: white;
+  font-family: "Yanone Kaffeesatz";
 }
 
 .autocomplete-items div:hover {
@@ -293,6 +295,9 @@ autocomplete(document.getElementById("myInput"), store);
 var officesShown = false;
 var conferenceroomsShown = false;
 var advisorsShown = false;
+
+
+
 function showOffices(){
     if(!officesShown){
         if(conferenceroomsShown){
@@ -307,7 +312,7 @@ function showOffices(){
     }
     document.getElementById("golubButton").onclick = function () {
                 location.href = "map.html";
-            };
+    };	
 }
 document.getElementById("home").onclick = function () {
                     location.href = "index.html";
@@ -523,6 +528,25 @@ if(!conferenceroomsShown){
     }else{
         hideConfrencerooms();
     }
+	document.getElementById("notImplemented1").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+	document.getElementById("notImplemented2").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+	document.getElementById("notImplemented3").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+	document.getElementById("notImplemented4").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+	document.getElementById("notImplemented5").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+	document.getElementById("notImplemented6").onclick = function () {
+		document.getElementById('id01').style.display='block';
+	};
+
 }
 
 function showConfrenceroomsHelper(){
@@ -541,44 +565,67 @@ function showConfrenceroomsHelper(){
     var conferenceRoom1Directions = document.createElement("BUTTON");
     conferenceRoom1Directions.innerHTML = "Directions";
     conferenceRoom1Directions.className = "directionsButton";
-    var conferenceRoom2 =  document.createElement("h3");
+	conferenceRoom1Directions.id = "notImplemented1";
+    
+	
+	var conferenceRoom2 =  document.createElement("h3");
     conferenceRoom2.className = "conferenceHeaders";
     conferenceRoom2.innerHTML = "Conference Room 2: ";
     var conferenceRoom2Reserve = document.createElement("BUTTON");
     conferenceRoom2Reserve.className = "reserveButtonOpen";
     conferenceRoom2Reserve.innerHTML = "Reserve";
-    var conferenceRoom2Directions = document.createElement("BUTTON");
+	conferenceRoom2Reserve.id = "notImplemented2";
+    
+	
+	var conferenceRoom2Directions = document.createElement("BUTTON");
     conferenceRoom2Directions.innerHTML = "Directions";
     conferenceRoom2Directions.className = "directionsButton";
+	conferenceRoom2Directions.id = "notImplemented3";
+	
+	
     var conferenceRoom3 =  document.createElement("h3");
     conferenceRoom3.className = "conferenceHeaders";
     conferenceRoom3.innerHTML = "Conference Room 3: ";
     var conferenceRoom3Reserve = document.createElement("BUTTON");
     conferenceRoom3Reserve.innerHTML = "Occupied";
     conferenceRoom3Reserve.className = "reserveButtonOccupied";
-    var conferenceRoom3Directions = document.createElement("BUTTON");
+    
+	
+	var conferenceRoom3Directions = document.createElement("BUTTON");
     conferenceRoom3Directions.innerHTML = "Directions";
     conferenceRoom3Directions.className = "directionsButton";
+	conferenceRoom3Directions.id = "notImplemented4";
+	
+	
     var conferenceRoom4 =  document.createElement("h3");
     conferenceRoom4.className = "conferenceHeaders";
     conferenceRoom4.innerHTML = "Conference Room 4: ";
     var conferenceRoom4Reserve = document.createElement("BUTTON");
     conferenceRoom4Reserve.className = "reserveButtonOccupied";
     conferenceRoom4Reserve.innerHTML = "Occupied";
-    var conferenceRoom4Directions = document.createElement("BUTTON");
+    
+	
+	var conferenceRoom4Directions = document.createElement("BUTTON");
     conferenceRoom4Directions.innerHTML = "Directions";
     conferenceRoom4Directions.className = "directionsButton";
-    var conferenceRoom5 =  document.createElement("h3");
+    conferenceRoom4Directions.id = "notImplemented5";
+	
+	
+	var conferenceRoom5 =  document.createElement("h3");
     conferenceRoom5.className = "conferenceHeaders";
     conferenceRoom5.innerHTML = "Conference Room 5: ";
     var conferenceRoom5Reserve = document.createElement("BUTTON");
     conferenceRoom5Reserve.innerHTML = "Occupied";
     conferenceRoom5Reserve.className = "reserveButtonOccupied";
-    var conferenceRoom5Directions = document.createElement("BUTTON");
+    
+	
+	var conferenceRoom5Directions = document.createElement("BUTTON");
     conferenceRoom5Directions.innerHTML = "Directions"
     conferenceRoom5Directions.className = "directionsButton";
-
-    var locationsContainer = document.getElementById('locationsContainer');
+	conferenceRoom5Directions.id = "notImplemented6";
+	
+    
+	var locationsContainer = document.getElementById('locationsContainer');
     locationsContainer.appendChild(title);
     locationsContainer.appendChild(conferenceRoomsList);
     conferenceRoomsList.appendChild(conferenceRoom1);

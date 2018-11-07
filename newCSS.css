@@ -243,6 +243,7 @@ padding-right:30px;
     border-radius: 11px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
+	border: none;
 }
 .reserveButtonOpen:active {
 	opacity: 0.8;
@@ -256,6 +257,7 @@ padding-right:30px;
     border-radius: 11px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
+	border: none;
 }
 .reserveButtonOccupied:active {
 	opacity: 0.8;
@@ -270,6 +272,7 @@ padding-right:30px;
     border-radius: 11px;
     font-size: 24px;
 	font-family: 'Open Sans Condensed', sans-serif;
+	border: none;
 }
 .directionsButton:active {
 	opacity: 0.8;
