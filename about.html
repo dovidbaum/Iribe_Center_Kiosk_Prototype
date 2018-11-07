@@ -3,36 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https:/stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="newCSS.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|KoHo:700|Open+Sans+Condensed:300|Yanone+Kaffeesatz"
+          rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <section class="roomOptions">
+                <br>
 
 
-<img src="irebelobby.jpeg" align="center" height="500" width="800">
+                <button class="roomOptionsButtons" id="btnIribeCenter" type="button" data-toggle="modal">Iribe Center
+                </button>
 
-<p>A striking presence at the corner of Baltimore Avenue and Campus Drive, the Brendan Iribe Center
-will be a hub for technology at the heart of a new innovation district, among high-tech companies, government agencies and institutional colleagues.
-</p>
 
-<p>
-Bringing together the university's top-ranked Department of Computer Science and its
-renowned Institute for Advanced Computer Studies (UMIACS), the building's six floors of
-specialized labs will support groundbreaking research in virtual and augmented reality,
-artificial intelligence, robotics, computer vision, algorithms, programming languages and
-systems.
-</p>
+                <button class="roomOptionsButtons" id="btnBrendanIribe" type="button" data-toggle="modal">Brendan
+                    Iribe
+                </button>
+                <button class="roomOptionsButtons" id="btnLabs" type="button" onclick="">Labs</button>
+                <button class="roomOptionsButtons" id="btnClassrooms" type="button" onclick="">Classrooms</button>
+                <button class="roomOptionsButtons" id="btnAuditorium" type="button" onclick="">Auditorium</button>
+                <button class="roomOptionsButtons" id="btnFloorplan" type="button" onclick="">Floor plans</button>
 
-<p>
-Students and faculty alike will experiment and create in open work areas and
-makerspaces filled with natural light. Flexible classrooms will promote teamwork and active
-learning. And welcoming common areas - including an expansive green space along
-Baltimore Avenue - will extend the collaborative environment to the broader community.
-</p>
+            </section>
 
+        </div><!-- end col -->
+
+
+        <div class="col-9" id="locationsContainer">
+            <br>
+        </div>
+    </div><!-- end row -->
+    <!-- bottom Buttons -->
+    <br><br>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <button style="color: #5BA747;" id="back" class="bottomButtons" onclick="">
+                <span class="glyphicon glyphicon-arrow-left" alt="<"></span>
+            </button>
+            <button style="color: #5BA747;" id="home" class="bottomButtons">
+                <a href="index.html"></a>
+                <span class="glyphicon glyphicon-home" alt="<"></span>
+            </button>
+            <button style="color: #5BA747;" id="forward" class="bottomButtons"
+                    onclick="location:index.html">
+                <span class="glyphicon glyphicon-arrow-right" alt="<"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+
+    .modal {
+        width: 700px;
+        color: #1e7e34;
+        position: absolute;
+        top: -70px;
+        right: 100px;
+        bottom: 0;
+        left: 600px;
+        z-index: 10040;
+        overflow: auto;
+        padding: 100px;
+        overflow-y: auto;
+    }
+</style>
+
+<!-- Brendan Iribe Modal -->
+<div id="brendanIribeModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Hi! I'm Brendan Iribe!</p>
+    </div>
+</div>
+
+
+<!-- Iribe Center Modal -->
+<div id="iribeCenterModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+
+
+        <h2 align="center">Brendan Iribe Center</h2>
+
+                <p><font color="black">
+            A striking presence at the corner of Baltimore Avenue and Campus Drive, the Brendan Iribe Center will be a
+            hub for technology at the heart of a new innovation district, among high-tech companies, government agencies
+            and institutional colleagues.
+        <p>
+        <p>Bringing together the university's top-ranked Department of Computer Science and its renowned Institute for
+            Advanced Computer Studies (UMIACS), the building's six floors of specialized labs will support
+            groundbreaking research in virtual and augmented reality, artificial intelligence, robotics, computer
+            vision, algorithms, programming languages and systems.</p>
+        <p> The building will house nationally recognized centers of interdisciplinary research in cybersecurity,
+            computational biology, quantum computing, data science and other fast-growing tech fields. The advances
+            developed here will help create a virtuous cycle of innovation, establishing Maryland tech companies and
+            adding to the state's economic development.</p>
+
+        <p> Students and faculty alike will experiment and create in open work areas and makerspaces filled with natural
+            light. Flexible classrooms will promote teamwork and active learning. And welcoming common areas - including
+            an expansive green space along Baltimore Avenue - will extend the collaborative environment to the broader
+            community.</p>
+        </font>
+    </div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('iribeCenterModal');
+
+    var modal1 = document.getElementById('brendanIribeModal');
+    //var modal = document.getElementById('brendanCenterModal');
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnIribeCenter");
+    //var btn = document.getElementById("btnBrendanIribe");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    var btn1 = document.getElementById("btnBrendanIribe");
+
+    btn1.onclick = function(){
+      modal1.style.display = "block";
+    }
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 </body>
-
-
-
 </html>
