@@ -245,7 +245,7 @@ autocomplete(document.getElementById("myInput"), store);
         <div class="col-3">
             <section class="roomOptions">
                 <br>
-                <button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Offices</button>
+                <button class="roomOptionsButtons" id="Offices" type="button" onclick="showOffices()">Teachers</button>
                 <button class="roomOptionsButtons" id="Classrooms" type="button" onclick="document.getElementById('id01').style.display='block'">Classrooms</button>
                 <button class="roomOptionsButtons" id="MakerSpace" type="button" onclick="document.getElementById('id01').style.display='block'">Maker Space</button>
                 <button class="roomOptionsButtons" id="ConferenceRooms" type="button" onclick="showConfrencerooms()">Conference Rooms</button>
@@ -371,9 +371,11 @@ function showAdvisors(){
 
 function showOfficesHelper() {
      officesShown = true;
+     var office = document.getElementById("Offices");
+    // office.style.backgroundColor = '#267CA3'; //3AC1FF
      var title = document.createElement("h1");
      title.className = "title";
-     title.innerHTML = "OFFICES";
+     title.innerHTML = "TEACHERS";
      var officesList = document.createElement("div");
      officesList.className = "officesList";
      var officeRow1 = document.createElement("div");
@@ -510,6 +512,7 @@ row1[0].parentNode.removeChild(row1[0]);
 officeList[0].parentNode.removeChild(officeList[0]);
 title[0].parentNode.removeChild(title[0]);
 officesShown = false;
+
 }
 function showConfrencerooms(){
 if(!conferenceroomsShown){
