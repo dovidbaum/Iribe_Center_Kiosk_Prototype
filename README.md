@@ -17,9 +17,7 @@ It can be run on a Windows 7 or above PC.
 
 ![Cover](pics/1.jpg)
 ![Location](pics/2.jpg)
-![HomePage](pics/3.jpg)
-![Search](pics/4.jpg)
-![Map](pics/5.jpg)
+
 
 #### todo: 
 • Fix/add rest of low fidelity prototype to Readme 
